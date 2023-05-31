@@ -1,10 +1,10 @@
 import React from 'react';
-import './NavBar.css'
+import './Navbar.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Button } from 'react-bootstrap';
-import { NavLink, useNavigate, useParams } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { email, fullName } from '../LogIn/LogInForm';
 
 export default function NavBar() {
