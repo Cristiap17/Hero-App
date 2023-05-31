@@ -15,9 +15,10 @@ const DashboardRoutes = () => {
                 <Route path='marvel' element={<MarvelScreen />} />
                 <Route path='dc' element={<DcScreen />} />
                 <Route path='search' element={<SearchScreen />} />
-                <Route path='*' element={<Navigate replace to='login' />} />
+                <Route path='*' element={<Navigate replace to='marvel' />} />
                 <Route path='hero/:idHero' element={<HeroScreen />} />
             </Route>
+                <Route path='*' element={<Navigate replace to='/login' />} />
         </Routes>
     )
 }
