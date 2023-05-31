@@ -1,0 +1,44 @@
+.main-screen-container {
+    width: 90%;
+    display: grid;
+    align-content: center;
+    margin: 20px auto;
+}
+
+
+.main-screen-container hr {
+    margin: 28px 0
+}
+
+.title-screen {
+    text-align: center;
+    font-size: 52px;
+}
+
+.marvel-screen-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.marvel-screen-container div {
+    width: 100% !important;
+    margin: 0;
+}
+
+@media (max-width: 1207px) {
+    .marvel-screen-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 807px) {
+    .marvel-screen-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-screen-container {
+        margin: 20px auto;
+    }
+}

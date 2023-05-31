@@ -1,0 +1,34 @@
+.title-screen-login {
+    font-size: 52px;
+}
+
+.login-form-container {
+    width: 50% !important;
+}
+
+.button-login-style {
+    width: 50%;
+    font-size: 20px !important;
+}
+
+@media (max-width: 768px) {
+    .login-form-container {
+        width: 100% !important;
+    }
+
+    .button-login-style {
+        width: 50%;
+        font-size: 20px
+    }
+}
+
+@media (max-width: 575px) {
+    .login-form-container {
+        width: 100% !important;
+    }
+
+    .button-login-style {
+        width: 100%;
+        font-size: 20px
+    }
+}

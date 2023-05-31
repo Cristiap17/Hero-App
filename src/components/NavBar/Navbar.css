@@ -1,0 +1,68 @@
+.container {
+    gap: 24px;
+}
+
+.navbar-brand {
+    color: var(--bs-light) !important;
+    font-weight: bold;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+    color: var(--bs-light);
+}
+
+.nav-container {
+    font-weight: 500;
+    display: flex;
+    width: 100%;
+}
+
+.custom-link {
+    color: aliceblue !important;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: var(--bs-link-hover-color) !important;
+}
+
+.activelink {
+    color: var(--bs-link-hover-color) !important;
+}
+
+.inactiveLink {
+    color: var(--bs-light) !important;
+}
+
+.nav-logOut {
+    gap: 16px;
+}
+
+.nav-logOut a {
+    font-weight: bold;
+}
+
+.register-style {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.register-style span {
+    padding: 0;
+    color: var(--bs-light);
+    text-align: center;
+}
+
+.email-style {
+    font-size: 12px !important;
+}
+
+.button-logOut-style span {
+    font-weight: bold;
+}
+
+.button-logOut-style:hover {
+    color: var(--bs-light) !important;
+}

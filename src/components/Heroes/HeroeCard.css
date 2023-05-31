@@ -1,0 +1,16 @@
+.card {
+    width: 28rem !important;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: contain;
+}
+
+.card-body {
+    width: 100%;
+}
