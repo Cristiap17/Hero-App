@@ -1,5 +1,5 @@
 import React from 'react'
-import './LogIn.css'
+import './Login.css'
 import LogInForm from './LogInForm'
 
 export default function LogIn() {
