@@ -1,5 +1,5 @@
 import './App.css'
-import  DashboardRoutes  from './dashboardRoutes/DashboardRoutes'
+import DashboardRoutes from './dashboard/Dashboard'
 
 function App() {
   return (
