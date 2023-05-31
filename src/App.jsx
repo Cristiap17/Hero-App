@@ -1,10 +1,10 @@
 import './App.css'
-import  DashBoardRoutes  from './dashboardRoutes/DashBoardRoutes'
+import  DashboardRoutes  from './dashboardRoutes/DashboardRoutes'
 
 function App() {
   return (
     <>
-      <DashBoardRoutes/>
+      <DashboardRoutes/>
     </>
   )
 }

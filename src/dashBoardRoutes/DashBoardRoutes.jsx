@@ -7,7 +7,7 @@ import SearchScreen from '../components/SearchScreen/SearchScreen'
 import DcScreen from '../components/DcScreen/DcScreen'
 import HeroScreen from '../pages/HeroScreen'
 
-const DashBoardRoutes = () => {
+const DashboardRoutes = () => {
     return (
         <Routes>
             <Route path='/login' element={<LogIn />} />
@@ -22,4 +22,4 @@ const DashBoardRoutes = () => {
     )
 }
 
-export default DashBoardRoutes
+export default DashboardRoutes
