@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
 
+
 export let fullName;
 export let email;
 
@@ -11,7 +12,8 @@ function LogInForm() {
   const [registerName, setRegisterName] = useState('')
   const [registerEmail, serRegisterEmail] = useState('')
 
-  const toggle = ()=>{
+  const toggle = (event)=>{
+    event.preventDefault()
     navigate('/marvel') // /home
     fullName = registerName;
     email = registerEmail
