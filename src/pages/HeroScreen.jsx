@@ -8,15 +8,8 @@ import './HeroScreen.css'
 
 export default function HeroScreen() {
     const params = useParams()
-    const navigate = useNavigate()
     const heroSelectec = heroes.find(hero => hero.superhero.toLowerCase().trim() === params.idHero.toLowerCase())
-
-    let returnUrl = null
-
-    heroSelectec.publisher === 'Marvel Comics' 
-    ? returnUrl = '/marvel'
-    : returnUrl = '/dc'
-
+ 
     const returnScreen = ()=>{
         window.history.back()
     }

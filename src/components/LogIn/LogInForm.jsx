@@ -12,7 +12,7 @@ function LogInForm() {
   const [registerEmail, serRegisterEmail] = useState('')
 
   const toggle = ()=>{
-    navigate('/marvel')
+    navigate('/marvel') // /home
     fullName = registerName;
     email = registerEmail
   }
@@ -33,7 +33,7 @@ function LogInForm() {
           type="text" 
           placeholder="Type full name" 
           onChange={handleChangeName}
-          required
+          /* required */
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -42,7 +42,7 @@ function LogInForm() {
           type="email" 
           placeholder="Enter email"
           onChange={handleChangeEmail}
-          required
+          /* required */
         />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
