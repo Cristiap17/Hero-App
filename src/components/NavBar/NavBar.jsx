@@ -1,16 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Navbar.css'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Button } from 'react-bootstrap';
 import { NavLink, useNavigate } from "react-router-dom";
-import { email, fullName } from '../LogIn/LogInForm';
+import { AuthContext } from '../../context/AuthProvider';
 
 export default function NavBar() {
 
+  const { user, setUser} = useContext(AuthContext)
+
   const navigate = useNavigate()
   const handleLogOut = () => {
+    setUser({...user, name: '', email: '', isAuthenticated: false})
     navigate('/login')
   }
   
@@ -30,8 +33,8 @@ export default function NavBar() {
             </Nav>
             <Nav className='nav-logOut'>
               <div className='register-style'>
-                <Navbar.Text>{fullName}</Navbar.Text>
-                <Navbar.Text className='email-style'>{email}</Navbar.Text>
+                <Navbar.Text>{user.name}</Navbar.Text>
+                <Navbar.Text className='email-style'>{user.email}</Navbar.Text>
               </div>
               <Button 
                 className='button-logOut-style' 

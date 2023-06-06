@@ -1,8 +1,8 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useNavigate } from 'react-router-dom';
-
+import { AuthContext } from '../../context/AuthProvider';
 
 export let fullName;
 export let email;
@@ -11,12 +11,12 @@ function LogInForm() {
   const navigate = useNavigate()
   const [registerName, setRegisterName] = useState('')
   const [registerEmail, serRegisterEmail] = useState('')
+  const { user, setUser } = useContext(AuthContext);
 
   const toggle = (event)=>{
     event.preventDefault()
-    navigate('/marvel') // /home
-    fullName = registerName;
-    email = registerEmail
+    setUser({...user, name: registerName, email: registerEmail, isAuthenticated: true})
+    navigate('/marvel') 
   }
 
   function handleChangeName(event) {
@@ -35,7 +35,7 @@ function LogInForm() {
           type="text" 
           placeholder="Type full name" 
           onChange={handleChangeName}
-          /* required */
+          required
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -44,7 +44,7 @@ function LogInForm() {
           type="email" 
           placeholder="Enter email"
           onChange={handleChangeEmail}
-          /* required */
+          required
         />
         <Form.Text className="text-muted">
           We'll never share your email with anyone else.
