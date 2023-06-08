@@ -15,12 +15,12 @@ export default function MarvelScreen() {
           {newHeroes.map((newHeroe) => (
             <HeroeCard
               key={newHeroe.id}
-              heroeImage={`src/assets/heroes/${newHeroe.id}.jpg`}
+              heroeImage={`https://github.com/Cristiap17/Hero-App/blob/main/src/assets/heroes/${newHeroe.id}.jpg`}
               heroeName={newHeroe.superhero}
               alterEgo={newHeroe.alter_ego}
               firstAparience={newHeroe.first_appearance}
             />
-          ))}
+          ))} 
         </div>
       </div>
     </>
